@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Generics | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js" async></script>
+    </head>
+    <body>
+        
+        <div id="navbar">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+          </div>
+        <div id="flexcont">
+
+        <div id="sidebar">
+            <div id="cartbar">
+            <h3>Корзина</h3>
+            <div id="cart">
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Всього:</strong>
+                        <span class="cart-total-price">$0</span>
+                    </div>
+                    <button class="btn btn-primary btn-purchase" type="button">Оформити замовлення</button>
+            </div>
+            </div>
+        </div>
+        <div id="pizzamenu">
+        <section class="container content-section">
+            <table align="center">
+                <tr>
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <span class="shop-item-title">Дьявола</span>
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2020/05/dyavola-1.jpg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">160 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">В КОРЗИНУ</button>
+                                    <!-- <div class="dropdown">
+                                        <button class="dropbtn">Додатки</button>
+                                        <div class="dropdown-content">
+                                          <a href="#" class="shrooms">+ гриби</a>
+                                          <a href="#" class="tomatoes">+ помідори</a>
+                                          <a href="#" class="pepper">+ перець</a>
+                                        </div>
+                                      </div -->
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <span class="shop-item-title">Маргарита</span>
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2020/05/margaryta.jpg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">140 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">В КОРЗИНУ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <span class="shop-item-title">Салямі</span>
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2021/10/salyami.jpg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">150 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">В КОРЗИНУ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <tr align="center">
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <span class="shop-item-title">Наполі</span>
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2020/07/napoli-1.jpg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">180 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">В КОРЗИНУ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <span class="shop-item-title">4 сири</span>
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2020/05/4-syry-1.jpg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">180 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">В КОРЗИНУ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <span class="shop-item-title">Гавайська</span>
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2020/05/gavajska-1.jpg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">170 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">В КОРЗИНУ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <tr align="center">
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <span class="shop-item-title">Цезара</span>
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2020/05/czezara-1.jpg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">170 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">В КОРЗИНУ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <span class="shop-item-title">Шинка гриби</span>
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2020/05/z-shynkoyu-i-grybamy.jpg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">160 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">В КОРЗИНУ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <span class="shop-item-title">Пепероні</span>
+                                <img class="shop-item-image" src="https://smaki-maki.com/wp-content/uploads/sites/4/2021/09/peperoni.jpg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-price">180 грн</span>
+                                    <button class="btn btn-primary shop-item-button" type="button">В КОРЗИНУ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+
+            
+        </section>
+        </div>
+        </div>
+        <!-- <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">The Generics</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer> -->
+    </body>
+</html>
